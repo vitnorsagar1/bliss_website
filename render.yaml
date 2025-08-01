@@ -9,4 +9,4 @@ services:
       - key: DJANGO_SETTINGS_MODULE
         value: bliss_website.settings
       - key: PYTHON_VERSION
-        value: 3.10.13
+        value: 3.10.8
