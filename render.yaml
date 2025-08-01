@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bliss-django
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn bliss_website.wsgi:application"
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: bliss_website.settings
