@@ -10,8 +10,13 @@ SECRET_KEY = 'django-insecure-q#yaa!(hzi0vl&%3j5cwrsw6nvz398#-*8=fzr4%$a1m_$r9^*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ALLOWED_HOSTS = ['blissinnovation.in', 'www.blissinnovation.in', 'bliss-django.onrender.com']
-    
+ALLOWED_HOSTS = [
+    'blissinnovation.in',
+    'www.blissinnovation.in',
+    'bliss-django.onrender.com',
+    'bliss-website.onrender.com'   # ही नवी line
+]
+ 
 
 # Application definition
 INSTALLED_APPS = [
