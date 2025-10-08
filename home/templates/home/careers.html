@@ -1,14 +1,75 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<div class="container">
-    <h1>Careers</h1>
-    <p>Join our team and be a part of a dynamic, growing company! Explore internship and full-time opportunities below:</p>
-    <ul>
-        <li>Python/Django Developer (Internship)</li>
-        <li>Data Analyst (Internship)</li>
-        <li>BPO Executive</li>
-        <li>IT Trainer</li>
-    </ul>
+<div class="container my-5">
+    <h2 class="text-center mb-4">Careers</h2>
+    <div class="row">
+
+        <!-- Web Developer -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="career-card shadow">
+                <h4>Web Developer</h4>
+                <ul>
+                    <li>Django</li>
+                    <li>Front End</li>
+                    <li>Back End</li>
+                </ul>
+                <div class="d-flex justify-content-between">
+                    <a href="/static/pdfs/web_developer.pdf" class="btn btn-outline-primary btn-sm" target="_blank">Job Description</a>
+                    <a href="https://forms.gle/your-web-dev-form" class="btn btn-success btn-sm" target="_blank">Apply</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Analyst -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="career-card shadow">
+                <h4>Data Analyst</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Power BI</li>
+                    <li>Excel</li>
+                </ul>
+                <div class="d-flex justify-content-between">
+                    <a href="/static/pdfs/data_analyst.pdf" class="btn btn-outline-primary btn-sm" target="_blank">Job Description</a>
+                    <a href="https://forms.gle/your-data-analyst-form" class="btn btn-success btn-sm" target="_blank">Apply</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- App Developer -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="career-card shadow">
+                <h4>App Developer</h4>
+                <ul>
+                    <li>Android</li>
+                    <li>iOS</li>
+                </ul>
+                <div class="d-flex justify-content-between">
+                    <a href="/static/pdfs/app_developer.pdf" class="btn btn-outline-primary btn-sm" target="_blank">Job Description</a>
+                    <a href="https://forms.gle/your-app-dev-form" class="btn btn-success btn-sm" target="_blank">Apply</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Data Scientist -->
+        <div class="col-md-6 col-lg-3 mb-4">
+            <div class="career-card shadow">
+                <h4>Data Scientist</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>ML</li>
+                    <li>DL</li>
+                    <li>NLP</li>
+                </ul>
+                <div class="d-flex justify-content-between">
+                    <a href="/static/pdfs/data_scientist.pdf" class="btn btn-outline-primary btn-sm" target="_blank">Job Description</a>
+                    <a href="https://forms.gle/your-data-scientist-form" class="btn btn-success btn-sm" target="_blank">Apply</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
 </div>
 {% endblock %}

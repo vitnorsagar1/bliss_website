@@ -1,10 +1,57 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
-<div class="container">
-    <h1>Contact Us</h1>
-    <p>Email: bliss.cinfotech@gmail.com</p>
-    <p>Phone: +91 9049787074</p>
-    <p>Address: Wagholi, Pune, Maharashtra</p>
+<div class="container my-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row justify-content-center">
+
+        <!-- Email -->
+        <div class="col-md-4 mb-4">
+            <div class="contact-card text-center">
+                <h4>Email</h4>
+                <p><a href="mailto:admin@blissinnovation.in">admin@blissinnovation.in</a></p>
+            </div>
+        </div>
+
+        <!-- Phone -->
+        <div class="col-md-4 mb-4">
+            <div class="contact-card text-center">
+                <h4>Phone</h4>
+                <p><a href="tel:+919049787074">+91 9049787074</a></p>
+            </div>
+        </div>
+
+        <!-- Address -->
+        <div class="col-md-4 mb-4">
+            <div class="contact-card text-center">
+                <h4>Address</h4>
+                <p>Wagholi, Pune, Maharashtra</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Form Embed -->
+<div class="row mt-5">
+    <div class="col-md-8 offset-md-2">
+        <div class="contact-card">
+            <h4 class="text-center">fill the form</h4>
+            <h5 class="text-center">we will connect with you as soon as possible</h5>
+
+            
+            <!-- Replace the src link with your Google Form embed link -->
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLScsThq8X210gtI_gitikLqRu2wgN6vBUlnfrEsexBniw_q-Lw/viewform?usp=header" 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Loading…
+            </iframe>
+        </div>
+    </div>
+</div>
+
 </div>
 {% endblock %}
+

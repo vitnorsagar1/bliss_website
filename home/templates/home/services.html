@@ -1,14 +1,37 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block content %}
 <div class="container">
-    <h1>Our Services</h1>
-    <ul>
-        <li>Custom Python Projects</li>
-        <li>Web Development (Django)</li>
-        <li>Data Analytics & Data Science</li>
-        <li>BPO Services</li>
-        <li>Training & Internships</li>
-    </ul>
+    <section class="services-section">
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Data Analysis</h3>
+      <button class="poc-btn">POC Button</button>
+    </div>
+    <div class="service-card">
+      <h3>Chat Bot</h3>
+      <button class="poc-btn">POC Button</button>
+    </div>
+    <div class="service-card">
+      <h3>Web Development</h3>
+      <button class="poc-btn">POC Button</button>
+    </div>
+    <div class="service-card">
+      <h3>Mobile App Development</h3>
+      <button class="poc-btn">POC Button</button>
+    </div>
+    <div class="service-card">
+      <h3>Desktop App Development</h3>
+      <button class="poc-btn">POC Button</button>
+    </div>
+    <div class="service-card">
+      <h3>Internship Program</h3>
+      <button class="poc-btn">POC Button</button>
+    </div>
+  </div>
+</section>
+
+
 </div>
 {% endblock %}

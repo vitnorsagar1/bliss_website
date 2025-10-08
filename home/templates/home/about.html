@@ -1,5 +1,142 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<h1>About Us</h1>
-<p>Welcome to the About page. You can update this content later.</p>
+
+<style>
+    .hero {
+        background: url("{% static 'images/about-banner.jpg' %}") center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 80px 20px;
+    }
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+    .section h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #042e55;
+    }
+    .values, .services, .team {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        text-align: center;
+    }
+    .card {
+        flex: 1;
+        min-width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #f4f4f4;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card img {
+        max-width: 150px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+    .cta {
+        background: #042e55;
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .cta a {
+        background: #ff9800;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .cta a:hover {
+        background: #e68900;
+    }
+</style>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>About Us</h1>
+    <p>Who We Are & What We Do</p>
+</section>
+
+<!-- Company Overview -->
+<section class="section">
+    <h2>Our Company</h2>
+    <p>
+        Bliss IT Solution and Innovation is your trusted partner for complete IT solutions.
+        We specialize in Data Analytics, AI, Customized Software, Web and Mobile App Development.
+        Our goal is to innovate and deliver solutions that help businesses grow.
+    </p>
+</section>
+
+<!-- Mission & Values -->
+<section class="section">
+    <h2>Our Values</h2>
+    <div class="values">
+        <div class="card">
+            <h3>Innovation</h3>
+            <p>Pushing the boundaries of technology to create modern solutions.</p>
+        </div>
+        <div class="card">
+            <h3>Integrity</h3>
+            <p>Building trust through transparency and responsibility.</p>
+        </div>
+        <div class="card">
+            <h3>Excellence</h3>
+            <p>Delivering high-quality projects with precision and care.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Services Snapshot -->
+<section class="section">
+    <h2>Our Expertise</h2>
+    <div class="services">
+        <div class="card">Data Analytics</div>
+        <div class="card">Artificial Intelligence</div>
+        <div class="card">Web Development</div>
+        <div class="card">Mobile Apps</div>
+        <div class="card">Custom Software</div>
+    </div>
+</section>
+
+<!-- Meet Our Team -->
+<section class="section">
+    <h2>Meet Our Founders</h2>
+    <div class="team">
+        <div class="card">
+            <img src="{% static 'images/founder.jpg' %}" alt="Founder">
+            <h3>Sagar Vitnor</h3>
+            <p>Founder & CEO</p>
+            <p>Visionary leader passionate about building scalable IT solutions.</p>
+        </div>
+        <div class="card">
+            <img src="{% static 'images/cofounder.jpg' %}" alt="Co-Founder">
+            <h3>Co-Founder Name</h3>
+            <p>Co-Founder & CTO</p>
+            <p>Expert in AI & Data Analytics with a mission to transform businesses.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+    <h2>Want to Work With Us?</h2>
+    <p>Let's build the future of technology together.</p>
+    <a href="{% url 'contact' %}">Contact Us</a>
+</section>
+
 {% endblock %}
